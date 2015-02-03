@@ -1,0 +1,35 @@
+{
+  "name": "fractionless-boilerplate",
+  "version": "3.0.0",
+  "description": "The HTML/CSS boilerplate you build up from, not tear down.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Clever-Labs/fractionless-boilerplate.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "LESS",
+    "boilerplate"
+  ],
+  "author": "Bill Patrianakos <bill@cleverwebdesign.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Clever-Labs/fractionless-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Clever-Labs/fractionless-boilerplate",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^1.0.0",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.0.0"
+  }
+}

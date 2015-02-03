@@ -1,0 +1,34 @@
+# Fractionless Ignores
+#
+# There are 4 things we generally ignore
+# in all projects:
+#
+# - Dependancies: These should be installed
+#   through a package manager.
+# - System files: No one needs a copy of your
+#   .DS_Store file
+# - Environment files: Never force your users
+#   to adhere too strictly to a certain environment.
+# - Build results: Builds should be reproduceable
+#   and distributed outside of the repo
+
+##
+# Dependencies
+node_modules/
+src/bower_components/
+
+##
+# System files
+.DS_Store
+
+##
+# Environment files
+.nvmrc
+
+##
+# Build results
+dist/
+
+##
+# Misc.
+*.log

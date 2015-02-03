@@ -1,0 +1,34 @@
+{
+  "name": "fractionless-boilerplate",
+  "version": "3.0.0",
+  "description": "An HTML/CSS framework you build on instead of tear apart.",
+  "main": "src/index.html",
+  "keywords": [
+    "html",
+    "css",
+    "boilerplate",
+    "framework",
+    "grid",
+    "system"
+  ],
+  "authors": [
+    "Bill Patrianakos <bill@cleverwebdesign.net>"
+  ],
+  "license": "MIT",
+  "homepage": "http://fractionless.info",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jQuery": "~2.1.3",
+    "html5shiv": "~3.7.2",
+    "respond": "~1.4.2",
+    "normalize-css": "~3.0.2"
+  }
+}
