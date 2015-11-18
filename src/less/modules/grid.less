@@ -25,8 +25,10 @@
 // A single row contains twelve columns
 //
 // Use a row to split your page into horizontal
-// sections that contain one or more columns
-.row {
+// sections that contain one or more columns. The
+// `.form-row` variant is for use in forms and
+// makes clear what is being styled.
+.row, .form-row {
   display: block;
   width: 100%;
   max-width: @max-width;
@@ -49,7 +51,9 @@
 // Column mixin
 //
 // Creates a block that is a percentage width
-// of the row it is contained in.
+// of the row it is contained in. The `.block-`
+// variants are for use in forms and help make
+// clear that they're for creating grids in forms.
 //
 // @columns - The number of columns one block spans
 // Defaults to full-page width.
@@ -58,7 +62,7 @@
   @missing-width: (@gutter * ((@total-columns / @i) - 1)) / (@total-columns / @i);
   @width: @column-width - @missing-width;
 
-  .col-@{i} {
+  .col-@{i}, .block-@{i} {
     display: block;
     position: relative;
     float: left;
