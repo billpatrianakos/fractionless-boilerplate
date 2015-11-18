@@ -15,7 +15,7 @@
 ##
 # Dependencies
 node_modules/
-src/bower_components/
+src/vendor/
 
 ##
 # System files
