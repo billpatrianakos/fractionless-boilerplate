@@ -1,0 +1,74 @@
+// Flex Grid
+// =========
+// Grid system using Flexbox
+
+// Grid Variables
+@max-width: 1140px;
+@min-width: 755px;
+@total-columns: 12;
+@gutter: 1.618%;
+
+.container,
+.row {
+  .box-sizing(border-box);
+}
+
+.container {
+  padding: 0 40px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.create-columns(@i) when (@i > 0) {
+  @column-width: (((@max-width * @i) / @total-columns) * 100) / @max-width;
+  @missing-width: (@gutter * ((@total-columns / @i) - 1)) / (@total-columns / @i);
+  @width: @column-width - @missing-width;
+
+  .row > .col-@{i}, .block-@{i} {
+    display: block;
+    position: relative;
+    flex: 0 0 @width;
+    margin-right: @gutter;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // Custom column ordering
+  .row > .order-@{i} { order: @i; }
+
+  .create-columns(@i - 1);
+}
+.create-columns(@total-columns);
+
+//:::: Helper Classes :::://
+
+// The micro clearfix hack (more of a technique than hack)
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix() {
+  *zoom:1;
+  
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// A little help for responsive images
+img, object, embed {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
