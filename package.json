@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Clever-Labs/fractionless-boilerplate.git"
+    "url": "https://github.com/billpatrianakos/fractionless-boilerplate.git"
   },
   "keywords": [
     "HTML",
@@ -16,12 +16,12 @@
     "LESS",
     "boilerplate"
   ],
-  "author": "Bill Patrianakos <bill@cleverwebdesign.net>",
+  "author": "Bill Patrianakos <bill@billpatrianakos.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Clever-Labs/fractionless-boilerplate/issues"
+    "url": "https://github.com/billpatrianakos/fractionless-boilerplate/issues"
   },
-  "homepage": "https://github.com/Clever-Labs/fractionless-boilerplate",
+  "homepage": "https://github.com/billpatrianakos/fractionless-boilerplate",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.9.0",
