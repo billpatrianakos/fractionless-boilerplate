@@ -41,6 +41,13 @@
   align-content: stretch;
 }
 
+.row-loose {
+  &:extend(.row);
+  padding: 2.5em 0;
+  padding: 2.5rem 0;
+  .box-sizing(border-box);
+}
+
 .create-columns(@i) when (@i > 0) {
   @column-width: (((@max-width * @i) / @total-columns) * 100) / @max-width;
   @missing-width: (@gutter * ((@total-columns / @i) - 1)) / (@total-columns / @i);
