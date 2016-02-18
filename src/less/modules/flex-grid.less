@@ -46,7 +46,9 @@
   @missing-width: (@gutter * ((@total-columns / @i) - 1)) / (@total-columns / @i);
   @width: @column-width - @missing-width;
 
-  .row > .col-@{i}, .block-@{i} {
+  .row > .col-@{i}, 
+  .row-loose > .col-@{i},
+  .block-@{i} {
     display: block;
     position: relative;
     flex: 0 0 @width;
@@ -58,7 +60,8 @@
   }
 
   // Custom column ordering
-  .row > .order-@{i} { .order(@i); }
+  .row > .order-@{i},
+  .row-loose > .order-@{i} { .order(@i); }
 
   // Push and pull classes
   .push-@{i} {
