@@ -1,10 +1,8 @@
-# Fractionless Boilerplate v3.1.0
+# Fractionless Boilerplate
 
 > A front-end boilerplate and CSS starting point you build up instead of tear down.
 
 Most HTML boilerplates and CSS frameworks give you way too much to start off with. You end up spending a lot of time tearing them apart before you can become productive and start building your project up and out. Fractionless aims to solve that problem by giving you a good, blank, starting point you can build up and out from.
-
-Fractionless can easily be used to build out the front-end of static sites, templating and styling web applications, integrated into existing projects, or be used as a base for brand new sites.
 
 ## Quick Start
 
@@ -18,11 +16,11 @@ Getting started is easy. Just download or clone the repository, unzip, and start
 
 ## Using the Fractionless Grid
 
-The Fractionless grid is a 12 column, 1140px responsive grid. The system is composed of containers, rows, and columns.
+The Fractionless grid is a 12 column, 1140px responsive grid. The system is composed of containers, rows, and columns. It comes in both float based and flexbox flavors both of which use the same classes.
 
 __Containers__ (`.container`) are full-width block elements. They are containers for multiple rows. Containers are great for full width background colors or images
 
-__Rows__ (`.row`) are, well... rows. They hold one or more columns.
+__Rows__ (`.row`) are, well... rows. They hold one or more columns and keep them centered within a container
 
 __Columns__ (`.col-*`) are numbered 1 through 12. There are classes for pushing and pulling columns if you have a need to make the order of columns display differently than the order they're coded in.
 
@@ -58,7 +56,7 @@ Fractionless works great out of the box for static websites. Simply clone the pr
 
 From here you can begin developing using the files found in the `src` folder of the project. The default Grunt task will start a local server and watch your LESS and JS files for changes, transpile LESS to CSS, and run JSHint on your JavaScripts.
 
-## Integrating into an existing project
+### Integrating into an existing project
 
 You don't have to use the included project structure or Grunt tasks if you don't want to. If you already have a project using a different setup or want to integrate Fractionless into a web application, just rip the appropriate files or folder out from where they are and move them wherever you'd like.
 
