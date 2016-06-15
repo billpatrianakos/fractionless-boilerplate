@@ -32,3 +32,4 @@ dist/
 ##
 # Misc.
 *.log
+src/grid.html
