@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/billpatrianakos/fractionless-boilerplate/issues"
   },
-  "homepage": "https://github.com/billpatrianakos/fractionless-boilerplate",
+  "homepage": "http://fractionless.info",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.9.0",
