@@ -4,7 +4,7 @@
   "description": "The HTML/CSS boilerplate you build up from, not tear down.",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No errors if there are no tests\" && exit 1"
   },
   "repository": {
     "type": "git",
